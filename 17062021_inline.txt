@@ -1,0 +1,19 @@
+For example:
+
+inline func()
+{
+  return 100;
+}
+
+int main()
+{
+  func();
+}
+
+
+Error : Undefined defination to func() function(func is a inline function)
+
+
+Above error is due to the compiler cannot inline the function. This is typically caused by a flow-of-control complexity that prevents the optimizer from inlining the function. 
+In these cases, the compiler reverts to treating the function as a regular function. To resolve this error, static keyword should be added before the inline. 
+Using static keyword forces the compiler to consider this inline function in the linker, and hence the program compiles and run successfully.
