@@ -11,7 +11,7 @@ int main()
 }
 
 
-Error : Undefined defination to func() function(func is a inline function)
+Error : undefined reference to `func'
 
 
 Above error is due to the compiler cannot inline the function. This is typically caused by a flow-of-control complexity that prevents the optimizer from inlining the function. 
