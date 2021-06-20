@@ -15,3 +15,14 @@ int main()
 
     return 0;
 }
+
+/* Output
+
+ch1 = A
+ch2 = b
+ch3 = 3
+ch1 = 65
+ch2 = 98
+ch3 = 51
+
+*/
