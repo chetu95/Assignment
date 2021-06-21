@@ -6,6 +6,7 @@ int main()
     int isSorted = 1;
     printf("Enter the size of the array: ");
     scanf("%d", &n);
+    printf("Enter the array elements: ");
     for(i=0; i<n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -26,14 +27,15 @@ int main()
 }
 
 
+
 /* Output
 
 Enter the size of the array: 4
-12 34 56 78
+Enter the array elements: 12 34 67 89
 The array is in ascending order
 
 Enter the size of the array: 5
-12 34 41 10 45
+Enter the array elements: 9 24 31 10 56
 The array is not in ascending order
 
 */
