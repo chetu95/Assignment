@@ -12,6 +12,7 @@ int main()
         for(j=0; j<4; j++) {
             printf("%d ", arr[i][j]);
             printf("%d ", *(*(arr + i) + j));
+            printf("%d ", (*(*arr+i)+j));
         }
         printf("\n");
     }
@@ -20,11 +21,11 @@ int main()
 
 /* Output
 
-Address of 0th array = 4166846656  4166846656
-10 10 11 11 12 12 13 13 
-Address of 1th array = 4166846672  4166846672
-20 20 21 21 22 22 23 23 
-Address of 2th array = 4166846688  4166846688
-30 30 31 31 32 32 33 33
+Address of 0th array = 3847158368  3847158368
+10 10 10 11 11 11 12 12 12 13 13 13 
+Address of 1th array = 3847158384  3847158384
+20 20 11 21 21 12 22 22 13 23 23 14 
+Address of 2th array = 3847158400  3847158400
+30 30 12 31 31 13 32 32 14 33 33 15 
 
 */
