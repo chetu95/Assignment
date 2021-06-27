@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n, arr[100], i, j, sum, max_sum = 0;
+    int n, arr[100], i, j, sum, max_sum;
     
     printf("Enter the size of the array: ");
     scanf("%d", &n);
@@ -11,6 +11,7 @@ int main()
         scanf("%d", &arr[i]);
     }
     
+    max_sum = arr[0];
     for(i=0; i<n; i++) {
         sum = 0;
         for(j=i; j<n; j++) {
