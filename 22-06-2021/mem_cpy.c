@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void my_memcpy(void* src, void* dest, int size) {
+void my_memcpy(const void* src, void* dest, int size) {
     int i;
-    char* src_ptr = (char*) src;
+    const char* src_ptr = (const char*) src;
     char* dest_ptr = (char*) dest;
     
     for(i=0; i<size; i++) {
@@ -28,6 +28,7 @@ int main()
     }
     return 0;
 }
+
 
 
 /* Output
