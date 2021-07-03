@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define CLEARBIT(n, pos) (n & (0<<pos-1))
+#define CLEARBIT(n, pos) (n & ~(1<<pos-1))
 #define SETBIT(n, pos) (n | (1<<pos-1))
 #define TOGGLEBIT(n, pos) (n ^ (1<<pos-1))
 
